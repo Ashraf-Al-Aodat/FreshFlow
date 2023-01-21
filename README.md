@@ -20,6 +20,8 @@ Start the service by running:
 docker run -p 5000:5000 --name flow flow
 ```
 
+note: the db is not constant, we can use volumes to make it constant and inject this to the docker container, in K8S PV and PVC
+
 The microservice will be running on http://localhost:5000/.
 
 You can access the data through the endpoint http://localhost:5000/orders
