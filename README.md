@@ -47,6 +47,6 @@ An order is a collection of information about the item, when it can be ordered, 
 ## **NOTE**
 
 I didn't have time to add tests or even think about it and the docker compose file which I would have added some ui to the db, some auth like 
-KeyCloak. and I would have tried to use some design pattern to support the code quality and maintainability of the code and maybe 
-some caching to check if requested item is in there and if yes return it if not get it from the db then added to the cache to reduce the load on the db
-and maybe some async behavior like RabbitMQ, some integration and API test tools like cypress and Postman CLI and the CI/Cd pipeline am used to Jenkins.
+KeyCloak. and I would have tried to use some design pattern to support the code quality and maintainability and maybe 
+some caching to check if the requested item is in there and if yes return it if not get it from the db then added to the cache with some timestamp and update the recored if the timestamp has passed some window for example 1s to reduce the load on the db
+and maybe some async behavior like RabbitMQ, some integration and API test tools like cypress and Postman CLI and the CI/CD pipeline am used to Jenkins.
