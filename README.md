@@ -42,3 +42,11 @@ The data is served as a list of dicts, in JSON.
 Each dict represents an order, for an item, for a day.
 
 An order is a collection of information about the item, when it can be ordered, when it will be delivered, what’s the suggested retail price, what’s the profit margin, the purchase price, in which categories this item is in, any labels, how much there’s in a case of this stuff, how much they should order, and how much do they have in the inventory.
+
+
+## **NOTE**
+
+I didn't have time to add tests or even think about it and the docker compose file which I would have added some ui to the db, some auth like 
+KeyCloak. and I would have tried to use some design pattern to support the code quality and maintainability of the code and maybe 
+some caching to check if requested item is in there and if yes return it if not get it from the db then added to the cache to reduce the load on the db
+and maybe some async behavior like RabbitMQ, some integration and API test tools like cypress and Postman CLI and the CI/Cd pipeline am used to Jenkins.
