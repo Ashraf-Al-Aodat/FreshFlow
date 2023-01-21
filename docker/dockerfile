@@ -1,0 +1,22 @@
+FROM python
+
+# Create the app directory
+RUN mkdir -p /app
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements file
+COPY requirements.txt .
+
+# Install the dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the application files
+COPY ../src .
+
+# Expose the application's port
+EXPOSE 5000
+
+# Run the application
+CMD ["python", "run.py"]
