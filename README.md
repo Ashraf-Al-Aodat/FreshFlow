@@ -35,7 +35,6 @@ The project is structured as follows:
 - views.py: contain the endpoint that serves the data.
 - requirements.txt: contains all the python packages needed for the application to run.
 - Dockerfile: contains instructions for building the Docker image.
-- docker-compose.yml: contains configurations for the services that make up the application.
 
 ## **Data**
 
